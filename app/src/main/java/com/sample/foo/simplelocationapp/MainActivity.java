@@ -20,21 +20,15 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.util.HashMap;
-import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -131,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
 
 //                    // Instantiate the RequestQueue.
 //                    RequestQueue queue = Volley.newRequestQueue(getBaseContext());
-//                    String url = "https://api.breezometer.com/baqi/?lat=" + latitudeNetwork + "&lon=" + longitudeNetwork + "&key=7b36cc2b4954423b8ee0c49715ffdc04";
+//                    String url = "https://api.breezometer.com/baqi/?lat=" + latitudeNetwork + "&lon=" + longitudeNetwork + "&key=(your_key)";
 //
 //                    // Request a string response from the provided URL.
 //                    StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
@@ -153,8 +147,8 @@ public class MainActivity extends AppCompatActivity {
                     ///////////
                     RequestQueue queue = Volley.newRequestQueue(getBaseContext());
                     RequestQueue queue2 = Volley.newRequestQueue(getBaseContext());
-                    String url = "https://api.breezometer.com/baqi/?lat=" + latitudeNetwork + "&lon=" + longitudeNetwork + "&key=7b36cc2b4954423b8ee0c49715ffdc04";
-                    String url2 = "http://api.wunderground.com/api/d08a9ee068588fdf/alerts/q/Finland/Helsinki.json";
+                    String url = "https://api.breezometer.com/baqi/?lat=" + latitudeNetwork + "&lon=" + longitudeNetwork + "&key=(your_key)";
+                    String url2 = "http://api.wunderground.com/api/(your_key)/alerts/q/Finland/Helsinki.json";
                     JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(  Request.Method.GET, url, null,
                             new Response.Listener<JSONObject>() {
                                 @Override
