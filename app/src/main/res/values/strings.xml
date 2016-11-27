@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SmartLyfe - Environment Check</string>
+
+    <string name="pause">Pause SmartLyfe Updates</string>
+    <string name="resume">Resume SmartLyfe Updates</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
