@@ -177,9 +177,6 @@ public class MainActivity extends AppCompatActivity {
                                         jsonResponse += "Status: " + status + "\n\n";
                                         jsonResponse += "Pollutants: " + pollutants + "\n\n";
                                         jsonResponse += "Effects of Pollutants: " + effects + "\n\n";
-                                        jsonResponse += "Alerts: Snow/Ice" + "\n\n";
-                                        jsonResponse += "Alerts Description: The weather is potentially dangerous. The weather phenomena that have been forecast are not unusual, but be attentive if you intend to practice activities exposed to meteorological risks. Keep informed about the expected meteorological conditions and do not take any avoidable risk." + "\n\n";
-                                        jsonResponse += "Details: Traffic weather warning: The southern part of the country and in provinces Satakunta, Pirkanmaa, Etelä-Savo, North Karelia and South Ostrobothnia: Bad road conditions are expected beginning during the night because of snow or sleet, strong wind and ice-covered roads." + "\n\n";
                                         jsonResponse += "Recommendation for Children: " + children + "\n\n";
                                         jsonResponse += "Recommendation for Sports: " + sport + "\n\n";
                                         jsonResponse += "Recommendation for Health: " + health + "\n\n";
